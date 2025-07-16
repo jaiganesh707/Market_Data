@@ -31,7 +31,7 @@ jobs:
       run: mvn clean install
 
     - name: Build & push Docker image
-      run: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: jaiganesh567/jaiganesh567-stockmanage
         tags: latest
